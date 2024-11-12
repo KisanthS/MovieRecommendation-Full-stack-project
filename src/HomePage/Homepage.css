@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f; /* Black background for the entire page */
+    color: white;
+    overflow-x: hidden;
+}
+
+.homepage-container {
+    width: 100vw;
+    background-color: #1f1f1f; /* Ensure the homepage container has the same background */
+    margin-top: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f; /* Consistent navbar background */
+    padding: 10px 20px;
+    width: 100vw;
+    margin-top: -20px;
+}
+
+.navbar-logo {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar-search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    height: 45px;
+    width: 520px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    height: 45px;
+    text-decoration: none;
+}
+
+.search-button:hover {
+    color: black;
+}
+
+.navbar-button {
+    margin: 0 10px;
+    width: 100px;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.navbar-button:hover {
+    color: black;
+}
+
+.homepage-button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.homepage-button:hover {
+    color: red;
+}
+
+.hero-container {
+    background-color: #282828; /* Keep this as is for contrast */
+    padding: 50px;
+    text-align: center;
+    width: 100vw;
+}
+
+.hero-title {
+    font-size: 30px;
+    color: red;
+    margin-top: -20px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.featured-movies-container {
+    padding: 20px;
+    background-color: #1f1f1f;
+    margin-top: -20px; /* Ensure this section matches the overall background */
+}
+
+.featured-title {
+    text-align: center;
+    font-size: 28px;
+    color: red;
+}
+
+.movies-carousel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    scrollbar-width: none;
+    margin-top: -10px;
+}
+
+.movie-card {
+    flex: 0 0 200px;
+    height: 350px; 
+    margin-right: 15px;
+    background-color: #323232;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.2s;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.movie-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: white;
+}
+
+.movie-rating {
+    font-size: 14px;
+    color: #FFD700;
+    margin: 5px 0;
+}
+
+.movie-watch-link {
+    font-size: 12px;
+    color: #00BFFF;
+    text-decoration: underline;
+}
+
+/* Container for the top movies section */
+.top-movies-container {
+    padding: 20px;
+    background-color: rgba(18, 18, 18, 0.9); /* Semi-transparent black background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+/* Title style */
+.tab-top-title {
+    text-align: center;
+    font-size: 28px;
+    color: red;
+}
+
+/* Tabs styling */
+.nav-tabs {
+    margin-left: 345px;
+    background-color: black;
+    border-radius: 5px; /* Add border radius for aesthetic */
+    width: 800px; /* Set width for alignment with the table */
+}
+
+/* Movies list styling */
+.tab-movies-list {
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Movies list styling */
+.tab-movies-table {
+    width: 800px; /* Set width for alignment with tabs */
+    border-collapse: collapse; /* Merge borders */
+    margin: 0 auto; /* Center the table */
+    background: transparent; /* Keep the table background transparent */
+}
+
+.tab-movies-table th,
+.tab-movies-table td {
+    padding: 15px; /* Increased padding for table cells */
+    text-align: center;
+    background: #1f1f1f; /* Black background for cells */
+    color: white; /* Set text color to white */
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.tab-movies-table th {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.tab-movies-table tr:hover th,
+.tab-movies-table tr:hover td {
+    color: black;
+}
+
+.tab-movie-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.tab-movie-title a:hover {
+    text-decoration: none;
+    color: blue; 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .tab-top-title {
+        font-size: 20px; /* Adjust title size for smaller screens */
+        text-decoration: none;
+    }
+    
+    .tab-movie-title {
+        font-size: 12px; /* Adjust movie title size for smaller screens */
+        text-decoration: none;
+    }
+}
+
+.footer-container {
+    background-color: #1f1f1f; /* Ensure footer matches the overall background */
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+}
+
+.footer-text {
+    color: white;
+}
+
+.footer-links-container {
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}

@@ -1,0 +1,206 @@
+/* General Styles */
+.cast-body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cast Profile Section */
+.cast-profile-container {
+    padding: 80px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align to the left */
+    background-color: #121212;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.cast-profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: flex-start;  /* Align to the left */
+}
+
+.cast-profile-image {
+    width: 180px;  /* Reduced size */
+    height: 270px;  /* Reduced size */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #fff;
+}
+
+.cast-profile-info {
+    max-width: 800px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: flex-start;  /* Align to the left */
+    justify-content: flex-start;  /* Align to the left */
+}
+
+.cast-profile-info h2 {
+    font-size: 32px;  /* Reduced size */
+    font-weight: bold;
+    color: #f44336;
+    margin-bottom: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.cast-profile-info p {
+    font-size: 16px;  /* Reduced size */
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: left;
+    color: #ccc;
+}
+
+.cast-profile-info a {
+    color: #1E90FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cast-profile-info a:hover {
+    color: #f44336;
+}
+
+/* Movies List Section */
+.cast-movies-list {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.cast-movies-list h3 {
+    font-size: 24px;  /* Reduced size */
+    font-weight: bold;
+    color: #f44336;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.cast-movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Reduced gap */
+    justify-content: flex-start;
+}
+
+.cast-movie-card {
+    width: calc(25% - 20px);  /* 4 cards in a row */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.cast-movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+}
+
+.cast-movie-poster {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.cast-movie-title {
+    font-size: 18px;  /* Reduced size */
+    font-weight: bold;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.cast-movie-details {
+    padding: 15px;  /* Reduced padding */
+    color: white;
+    border-radius: 10px;
+    margin-top: -20px;
+    flex-grow: 1;
+}
+
+.cast-movie-details p {
+    margin: 6px 0;
+    font-size: 14px;  /* Reduced size */
+    line-height: 1.6;
+    color: #d3d3d3;
+    text-align: left;
+}
+
+.cast-movie-details .watch-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 18px;  /* Reduced padding */
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;  /* Reduced margin */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cast-movie-details .watch-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cast-profile-container {
+        padding: 80px 40px;
+    }
+
+    .cast-profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .cast-profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .cast-movies-grid {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cast-movie-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cast-profile-info h2 {
+        font-size: 24px;  /* Further reduced size */
+    }
+
+    .cast-movie-title {
+        font-size: 16px;  /* Further reduced size */
+    }
+
+    .cast-movie-details {
+        font-size: 12px;  /* Further reduced size */
+    }
+}

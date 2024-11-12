@@ -1,0 +1,102 @@
+/* Watchlist Container */
+.watchlist-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Watchlist Title */
+.watchlist-container h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
+    padding-right: 50px;
+}
+
+/* Watchlist Empty Message */
+.watchlist-container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+/* Watchlist Movie List */
+.watchlist-movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fit 4 cards per row */
+    gap: 15px; /* Reduced gap for a tighter layout */
+    margin-top: 20px;
+}
+
+/* Watchlist Movie Item */
+.watchlist-movie-item {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    max-width: 250px;
+}
+
+.watchlist-movie-item:hover {
+    transform: scale(1.05);
+}
+
+/* Movie Image */
+.watchlist-movie-image {
+    width: 250px;
+    height: 350px; /* Set a fixed height for smaller image size */
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.watchlist-movie-image:hover {
+    opacity: 0.9;
+}
+
+/* Movie Info */
+.watchlist-movie-info {
+    padding: 10px; /* Reduced padding for smaller content space */
+    text-align: center;
+}
+
+/* Movie Title */
+.watchlist-movie-info h3 {
+    font-size: 1.0em;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.watchlist-movie-info h3:hover {
+    color: #e50914;
+}
+
+/* Movie Release Date */
+.watchlist-movie-info p {
+    font-size: 0.9em;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+/* Remove Button */
+.watchlist-movie-info button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.watchlist-movie-info button:hover {
+    background-color: #b20710;
+}

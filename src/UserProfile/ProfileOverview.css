@@ -1,0 +1,155 @@
+/* Profile Overview Section */
+.profile-overview-container {
+    font-size: 1.5em;
+    color: #fff;
+    padding: 30px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 1150px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    text-align: left;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    position: relative; /* For absolute positioning of child elements */
+}
+
+/* Profile Overview Header */
+.profile-overview-container h2 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+
+.profile-overview-container h3 {
+    font-size: 22px;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.profile-overview-container p {
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+/* Profile Picture Section */
+.profile-overview-picture-container {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    text-align: center;
+}
+
+.profile-overview-picture-container .profile-overview-picture {
+    margin-bottom: 10px;
+}
+
+.profile-overview-picture-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-overview-picture-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.profile-overview-picture-container label {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.profile-overview-picture-container input[type="file"] {
+    display: none;
+}
+
+/* Bio, Date of Birth, and Genres Sections */
+.profile-overview-bio h4,
+.profile-overview-dob h4,
+.profile-overview-genres h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #ff4500;
+}
+
+.profile-overview-bio textarea,
+.profile-overview-dob input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #2c2c2c;
+    color: white;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.profile-overview-bio textarea:focus,
+.profile-overview-dob input:focus {
+    border-color: #ff4500;
+    outline: none;
+}
+
+/* Genres Section */
+.profile-overview-genres {
+    margin-top: 20px;
+}
+
+.profile-overview-genres div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.profile-overview-genres label {
+    font-size: 14px;
+    color: white;
+    margin-left: 8px;
+}
+
+/* Activity Stats */
+.profile-overview-stats {
+    margin-top: 20px;
+}
+
+.profile-overview-stats h4 {
+    font-size: 18px;
+    color: #ff4500;
+}
+
+.profile-overview-stats p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Update Button */
+.profile-overview-update-button {
+    margin-top: 20px;
+}
+
+.profile-overview-update-button button {
+    background-color: #ff0000;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    margin-left: 500px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.profile-overview-update-button button:hover {
+    transform: scale(1.05);
+    background-color: #ff0000;
+}
+

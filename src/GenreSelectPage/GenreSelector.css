@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.genre-selector-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.available-genres {
+    display: flex;           /* Aligns buttons in a row */
+    gap: 10px;               /* Space between buttons */
+    justify-content: center; /* Centers the buttons horizontally */
+    flex-wrap: wrap;         /* Allows buttons to wrap onto the next line if needed */
+    margin-bottom: 20px;     /* Space below the genre buttons */
+}
+
+.genre-button {
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-flex;    /* Ensures flex properties apply to the button */
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    border: none;
+}
+
+.genre-button.selected {
+    background-color: red;
+    color: black;
+}
+
+.genre-button:hover {
+    background-color: #ff3131;
+    color: black;
+}
+
+.genre-button.selected:hover {
+    background-color: #ff3131;
+    color: black;
+    border: none;
+}
+.selected-genres {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: normal; /* Not bold, based on your request */
+    color: black;
+    text-align: left; /* Aligns the selected genres text to the left */
+}
+
+.selected-genres-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start; /* Aligns selected genres to the left */
+}
+
+.selected-genre {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected-genre:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.selected-genre:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

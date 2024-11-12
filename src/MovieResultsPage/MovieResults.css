@@ -1,0 +1,269 @@
+.movie-results-classname-container {
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -70px;
+}
+
+.movie-results-classname-loading,
+.movie-results-classname-error {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.movie-results-classname-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.movie-results-classname-movie-image {
+    width: 100%;
+    height: auto; /* Keep aspect ratio */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.movie-results-classname-description {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.movie-results-classname-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+}
+
+/* Base styles for the watchlist button */
+.movie-results-classname-watchlist-button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Red background for "Add to Watchlist" */
+.add-to-watchlist {
+    background-color: red;
+    color: white;
+}
+
+/* Blue background for "Remove from Watchlist" */
+.remove-from-watchlist {
+    background-color: blue;
+    color: white;
+}
+
+.movie-results-classname-release-year,
+.movie-results-classname-language,
+.movie-results-classname-rating {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #999999;
+}
+
+.movie-results-classname-cast {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.movie-results-classname-cast-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.movie-results-classname-cast-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.movie-results-classname-cast-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100px;
+    margin: 10px;
+    cursor: pointer; /* Indicating interactivity */
+}
+
+.movie-results-classname-cast-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 8px;
+}
+
+/* Watch Providers Section */
+.movie-results-classname-watch-providers {
+    margin-top: 20px;
+    width: 100%; /* Full width */
+    color: white; /* Ensured text color is white */
+}
+
+.movie-results-classname-watch-providers-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.movie-results-classname-watch-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px; 
+    color: white; /* Ensured text color is white */
+    text-decoration: none; /* Removed text underline */
+}
+
+.movie-results-classname-provider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s;
+    color: white;
+    text-decoration: none; /* Ensured no underline */
+}
+
+.movie-results-classname-provider:hover {
+    transform: scale(1.05);
+}
+
+.movie-results-classname-provider-image {
+    width: 50px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.movie-results-classname-videos {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.movie-results-classname-videos-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.movie-results-classname-video-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.movie-results-classname-video {
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+    width: calc(25% - 15px);
+}
+
+.movie-results-classname-video-iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px; 
+}
+
+.justified-text {
+    text-align: justify;
+    margin-left: 20px; 
+}
+
+@media (max-width: 768px) {
+    .movie-results-classname-content {
+        align-items: center; 
+    }
+    .movie-results-classname-video {
+        width: calc(50% - 15px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-results-classname-video {
+        width: 100%;
+    }
+
+    .movie-results-classname-cast-list {
+        justify-content: center; /* Centering cast list on small screens */
+    }
+
+    .movie-results-classname-cast-member {
+        max-width: 80px; /* Adjust cast member size for smaller screens */
+    }
+}
+.movie-results-classname-similar-movies {
+    margin-top: 20px;
+}
+
+.movie-results-classname-similar-movies-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.movie-results-classname-similar-movies-list {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.movie-results-classname-similar-movie-item {
+    flex: 0 0 200px;
+    height: 350px; 
+    margin-right: 15px;
+    background-color: #4c4c4c;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.2s;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.movie-results-classname-similar-movie-item:hover {
+transform: scale(1.05);
+}
+
+.movie-results-classname-similar-movie-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.movie-results-classname-similar-movie-title {
+    font-size: 18px;
+    margin-top: 5px;
+}

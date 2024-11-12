@@ -1,0 +1,186 @@
+/* src/SearchResultsPage/SearchResults.css */
+
+.search-results-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Title and Keyword */
+.search-results-title {
+    font-size: 1.5em;
+    margin: 20px 0;
+    padding-left: 180px;
+}
+
+.search-results-keyword {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Filter Bar */
+.search-results-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; /* Space between buttons and input */
+    padding-left: 180px;
+    margin: 20px 0; /* Added margin for spacing */
+}
+
+/* Filter Buttons */
+.search-results-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-results-filter-button {
+    padding: 8px 16px;
+    background-color: #555555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Highlight the active button */
+.search-results-filter-button:hover,
+.search-results-filter-button.active {
+    background-color: blue;
+    color: white;
+}
+
+.search-results-language-dropdown select {
+    padding: 5px;
+    margin-left: 10px; /* Space between genre buttons and dropdown */
+}
+
+/* Additional Filters: Year and Language */
+.search-results-additional-filters {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Year Filter Dropdown */
+.search-results-year-dropdown select {
+    padding: 5px;
+    margin-left: 10px; /* Space between genre buttons and dropdown */
+}
+
+/* Search Bar */
+.search-results-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-results-search-bar input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 750px; /* Adjusted width as necessary */
+}
+
+.search-results-search-bar button {
+    padding: 8px 16px;
+    height: 45px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-results-search-bar button:hover {
+    background-color: blue;
+}
+
+/* Movie Results */
+.search-results-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 80px;
+    padding-left: 180px;
+    max-width: calc(180px * 6 + 40px * 4);
+}
+
+.search-results-movie-card {
+    flex: 0 0 200px;
+    background-color: #323232;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.2s;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.search-results-movie-card:hover {
+    transform: scale(1.05);
+}
+
+.search-results-movie-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.search-results-movie-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: white;
+}
+
+.search-results-movie-rating {
+    font-size: 14px;
+    color: #FFD700;
+    margin: 5px 0;
+}
+
+.search-results-no-results {
+    font-size: 18px;
+    color: #777;
+    padding-left: 180px;
+    margin-top: 20px;
+}
+
+.clear-filters-button{
+    background-color: blue;
+    border-radius: 5px;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    padding-left: 180px;
+}
+
+.page-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.page-button.active {
+    background-color: #0056b3;
+}

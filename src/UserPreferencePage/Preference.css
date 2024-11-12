@@ -1,0 +1,96 @@
+.preference-container {
+    font-size: 15px;
+    color: #fff;
+    padding: 30px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 1150px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    text-align: left;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.preference-container h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.preference-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #3c3c3c; /* Slightly lighter background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #555;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.preference-section h2 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #e50914; /* Netflix-style red color for section titles */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.preference-section h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #e50914; /* Netflix-style red color for section titles */
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.preference-section h2 svg {
+    margin-right: 8px;
+}
+
+.preference-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.preference-section label {
+    margin-right: 10px; /* Spacing between label and input */
+    font-weight: 500;
+}
+
+.preference-section input[type="checkbox"],
+.preference-section select {
+    margin-left: 8px; /* Space between label and checkbox/dropdown */
+}
+
+.preference-section select {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.preference-section input[type="checkbox"] {
+    transform: scale(1.1); /* Slightly larger checkbox */
+}
+
+.preference-section br {
+    margin-bottom: 10px; /* Adds spacing between elements */
+}
